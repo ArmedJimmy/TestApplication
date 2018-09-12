@@ -14,6 +14,7 @@ namespace TestApplication.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
+            //Adding a comment
             return new string[] { "value1", "value2" };
         }
 
