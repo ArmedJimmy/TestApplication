@@ -1,0 +1,9 @@
+C:\dev\TestApplication\TestApplication.Data\bin\Debug\netcoreapp2.1\TestApplication.Data.deps.json
+C:\dev\TestApplication\TestApplication.Data\bin\Debug\netcoreapp2.1\TestApplication.Data.dll
+C:\dev\TestApplication\TestApplication.Data\obj\Debug\netcoreapp2.1\TestApplication.Data.csprojAssemblyReference.cache
+C:\dev\TestApplication\TestApplication.Data\obj\Debug\netcoreapp2.1\TestApplication.Data.csproj.CoreCompileInputs.cache
+C:\dev\TestApplication\TestApplication.Data\obj\Debug\netcoreapp2.1\TestApplication.Data.AssemblyInfoInputs.cache
+C:\dev\TestApplication\TestApplication.Data\obj\Debug\netcoreapp2.1\TestApplication.Data.AssemblyInfo.cs
+C:\dev\TestApplication\TestApplication.Data\bin\Debug\netcoreapp2.1\TestApplication.Data.pdb
+C:\dev\TestApplication\TestApplication.Data\obj\Debug\netcoreapp2.1\TestApplication.Data.dll
+C:\dev\TestApplication\TestApplication.Data\obj\Debug\netcoreapp2.1\TestApplication.Data.pdb

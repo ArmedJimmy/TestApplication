@@ -1,0 +1,17 @@
+C:\dev\TestApplication\TestApplication\obj\Release\netcoreapp2.1\TestApplication.csprojAssemblyReference.cache
+C:\dev\TestApplication\TestApplication\obj\Release\netcoreapp2.1\TestApplication.csproj.CoreCompileInputs.cache
+C:\dev\TestApplication\TestApplication\obj\Release\netcoreapp2.1\TestApplication.RazorAssemblyInfo.cache
+C:\dev\TestApplication\TestApplication\obj\Release\netcoreapp2.1\TestApplication.RazorAssemblyInfo.cs
+C:\dev\TestApplication\TestApplication\obj\Release\netcoreapp2.1\TestApplication.AssemblyInfoInputs.cache
+C:\dev\TestApplication\TestApplication\obj\Release\netcoreapp2.1\TestApplication.AssemblyInfo.cs
+C:\dev\TestApplication\TestApplication\bin\Release\netcoreapp2.1\TestApplication.deps.json
+C:\dev\TestApplication\TestApplication\bin\Release\netcoreapp2.1\TestApplication.runtimeconfig.json
+C:\dev\TestApplication\TestApplication\bin\Release\netcoreapp2.1\TestApplication.runtimeconfig.dev.json
+C:\dev\TestApplication\TestApplication\bin\Release\netcoreapp2.1\TestApplication.dll
+C:\dev\TestApplication\TestApplication\bin\Release\netcoreapp2.1\TestApplication.pdb
+C:\dev\TestApplication\TestApplication\bin\Release\netcoreapp2.1\TestApplication.Data.dll
+C:\dev\TestApplication\TestApplication\bin\Release\netcoreapp2.1\TestApplication.Data.pdb
+C:\dev\TestApplication\TestApplication\obj\Release\netcoreapp2.1\TestApplication.RazorTargetAssemblyInfo.cache
+C:\dev\TestApplication\TestApplication\obj\Release\netcoreapp2.1\TestApplication.csproj.CopyComplete
+C:\dev\TestApplication\TestApplication\obj\Release\netcoreapp2.1\TestApplication.dll
+C:\dev\TestApplication\TestApplication\obj\Release\netcoreapp2.1\TestApplication.pdb
