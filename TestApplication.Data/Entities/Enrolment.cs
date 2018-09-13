@@ -12,6 +12,10 @@ namespace TestApplication.Data.Entities
 
         public int SupplyAddress_Id { get; set; }
 
+        public PaymentType PaymentType { get; set; }
+
+        public MeterType MeterType { get; set; }
+
         [ForeignKey("SupplyAddress_Id")]
         public virtual Address SupplyAddress { get; set; }
     }

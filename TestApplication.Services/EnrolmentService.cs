@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TestApplication.Data;
 using TestApplication.Data.Entities;
+using TestApplication.Data.Enums;
 
 namespace TestApplication.Services
 {
@@ -30,5 +31,12 @@ namespace TestApplication.Services
             _dataContext.Add(enrolment);
             _dataContext.SaveChanges();
         }
+
+        //public decimal CalculateProjection(PaymentType paymentType, MeterType meterType, decimal consumption)
+        //{
+            
+
+
+        //}
     }
 }
