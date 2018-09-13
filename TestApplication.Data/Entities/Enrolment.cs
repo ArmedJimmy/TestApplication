@@ -14,5 +14,7 @@ namespace TestApplication.Data.Entities
 
         [ForeignKey("SupplyAddress_Id")]
         public virtual Address SupplyAddress { get; set; }
+
+        public virtual List<PaymentOption> PaymentOptions { get; set; }
     }
 }
