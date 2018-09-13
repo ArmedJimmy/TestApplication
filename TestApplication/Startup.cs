@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -13,6 +14,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.Swagger;
 using TestApplication.Data;
+using TestApplication.Services;
 
 namespace TestApplication
 {
@@ -37,13 +39,18 @@ namespace TestApplication
 
             services.AddDbContext<DataContext>(options =>
             {
-                options.UseSqlServer(Configuration["ConnectionStrings:Default"]);
+                options.UseLazyLoadingProxies().UseSqlServer(Configuration["ConnectionStrings:Default"]);
             });
 
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
             });
+
+            services.AddAutoMapper();
+            services.AddMvc();
+
+            InjectDependencies(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -71,6 +78,11 @@ namespace TestApplication
             //app.UseHttpsRedirection();
 
             app.UseMvc();
+        }
+
+        private void InjectDependencies(IServiceCollection services)
+        {
+            services.AddScoped<IEnrolmentService, EnrolmentService>();
         }
     }
 }
