@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TestApplication.Data;
 
 namespace TestApplication.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20180912204634_AddingAddressTable")]
+    partial class AddingAddressTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -42,10 +44,6 @@ namespace TestApplication.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Addresses");
-
-                    b.HasData(
-                        new { Id = 1, City = "Glasgow", DateCreated = new DateTime(2018, 9, 13, 20, 8, 24, 360, DateTimeKind.Local), DateUpdated = new DateTime(2018, 9, 13, 20, 8, 24, 364, DateTimeKind.Local), HouseNumber = "16", Postcode = "G53 7HJ", StreetName = "Main Road" }
-                    );
                 });
 
             modelBuilder.Entity("TestApplication.Data.Entities.Enrolment", b =>
@@ -60,25 +58,20 @@ namespace TestApplication.Data.Migrations
 
                     b.Property<int>("Status");
 
-                    b.Property<int>("SupplyAddress_Id");
+                    b.Property<int?>("SupplyAddressId");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("SupplyAddress_Id");
+                    b.HasIndex("SupplyAddressId");
 
                     b.ToTable("Enrolments");
-
-                    b.HasData(
-                        new { Id = 1, DateCreated = new DateTime(2018, 9, 13, 20, 8, 24, 369, DateTimeKind.Local), DateUpdated = new DateTime(2018, 9, 13, 20, 8, 24, 369, DateTimeKind.Local), Status = 0, SupplyAddress_Id = 1 }
-                    );
                 });
 
             modelBuilder.Entity("TestApplication.Data.Entities.Enrolment", b =>
                 {
                     b.HasOne("TestApplication.Data.Entities.Address", "SupplyAddress")
                         .WithMany()
-                        .HasForeignKey("SupplyAddress_Id")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("SupplyAddressId");
                 });
 #pragma warning restore 612, 618
         }
